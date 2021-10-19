@@ -8,14 +8,24 @@ public class Bank {
         Account(int balance) { this.balance = balance; }
         int balance() { return balance; }
         boolean deposit(int value) {
-            balance += value;
-            return true;
+            try {
+                lock.lock();
+                balance += value;
+                return true;
+            } finally {
+                lock.unlock();
+            }
         }
         boolean withdraw(int value) {
-            if (value > balance)
-                return false;
-            balance -= value;
-            return true;
+            try {
+                lock.lock();
+                if (value > balance)
+                    return false;
+                balance -= value;
+                return true;
+            } finally {
+                lock.unlock();
+            }
 
         }
     }
