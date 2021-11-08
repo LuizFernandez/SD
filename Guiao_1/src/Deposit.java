@@ -1,5 +1,5 @@
 public class Deposit implements Runnable {
-    Bank bank;
+    private Bank bank;
 
     public Deposit(Bank bank) {
         this.bank = bank;
