@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Bank {
     private static class Account {
-        Lock l = new ReentrantLock();
+        public Lock l = new ReentrantLock();
         private int balance;
         Account(int balance) { this.balance = balance; }
         int balance() {
@@ -122,8 +122,13 @@ public class Bank {
             cto = map.get(to);
             if (cfrom == null || cto == null)
                 return false;
-            cfrom.l.lock();
-            cto.l.lock();
+            if(from < to){
+                cfrom.l.lock();
+                cto.l.lock();
+            } else {
+                cto.l.lock();
+                cfrom.l.lock();
+            }
         } finally {
             rl.unlock();
         }
