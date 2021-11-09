@@ -31,6 +31,14 @@ public class Bank {
     private Lock rl = l.readLock();
     private Lock wl = l.writeLock();
 
+    public int getNextId(){
+        return this.nextId;
+    }
+
+    public Map<Integer, Account> getmap(){
+        return map;
+    }
+
     // create account and return account id
     public int createAccount(int balance) {
         Account c = new Account(balance);
@@ -152,18 +160,20 @@ public class Bank {
         try {
             for(int i = 0; i < nextId; i++){
                 acs[i] = map.get(ids[i]);
-                if(acs[i] == null)
-                    return 0;
+
             }
             for(Account c : acs)
-                c.l.lock();
+                if(c != null)
+                    c.l.lock();
         } finally {
             rl.unlock();
         }
         int total = 0;
         for (Account c : acs) {
-            total += c.balance();
-            c.l.unlock();
+            if(c != null) {
+                total += c.balance();
+                c.l.unlock();
+            }
         }
         return total;
     }
