@@ -9,6 +9,9 @@ public class WarehouseCoop {
 
     private Map<String, Product> map =  new HashMap<String, Product>();
     private Lock l = new ReentrantLock();
+    private Condition c = l.newCondition();
+    private int turn = 0;
+    private int ticket = 0;
 
     private class Product {
         Condition isEmpty = l.newCondition();
@@ -34,6 +37,7 @@ public class WarehouseCoop {
 
     public void consume(String[] items) throws InterruptedException{
         l.lock();
+        int ticket = this.ticket++;
         for(int i = 0; i < items.length; i++){
             Product p = get(items[i]);
 
@@ -42,6 +46,10 @@ public class WarehouseCoop {
                 i = 0;
             }
         }
+        while(ticket > this.turn)
+            c.await();
+        this.turn++;
+        c.signalAll();
         for (String s : items){
             Product p = get(s);
             p.quantity--;
