@@ -1,7 +1,7 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class SomaNumb {
+public class SomaNumb {//Exercicio 4
 
     private int acc;
     private int numbs;
