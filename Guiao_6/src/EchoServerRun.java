@@ -48,7 +48,7 @@ public class EchoServerRun implements Runnable{
     }
     */
 
-    public void run() {//ESTA INCOMPLETO => EM VEZ DE IMPRIMIR NO CLIENTE O VALOR TOTAL GLOBAL, IMPRIMIR O VALOR TOTAL DO CLIENTE
+    public void run() {
         try {
 
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
@@ -58,10 +58,22 @@ public class EchoServerRun implements Runnable{
             boolean valid = true;
             while ((line = in.readLine()) != null && valid) {
                 int op = Integer.parseInt(line);
+                int soma = 0;
                 if((line = in.readLine()) != null) {
                     int num = Integer.parseInt(line);
-                    int resultado = this.a.choice(op, num);
-                    out.println(resultado);
+                    switch (op){
+                        case 1:
+                            soma += num;
+                            break;
+                        case 2:
+                            soma *= num;
+                            break;
+                        case 3:
+                            soma /= num;
+                            break;
+                    }
+                    this.a.choice(op, num);
+                    out.println(soma);
                     out.flush();
                     System.out.println("Client message: " + num);
                 }
