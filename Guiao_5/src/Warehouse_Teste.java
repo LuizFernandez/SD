@@ -17,7 +17,11 @@ public class Warehouse_Teste {
         */
 
         //Aliena B e Exercicio 2
-        WarehouseCoop h = new WarehouseCoop();
+        //WarehouseCoop h = new WarehouseCoop();
+
+        //Exercicio Extra
+
+        WareHouseFair h = new WareHouseFair();
 
         Thread[] clientes = new Thread[10];
         Thread[] trabalhadores = new Thread[10];

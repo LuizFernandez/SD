@@ -1,9 +1,9 @@
 public class RunSupply implements Runnable{
 
     //private Warehouse h;
-    private WarehouseCoop h;
+    private WareHouseFair h;
 
-    public RunSupply(WarehouseCoop h){
+    public RunSupply(WareHouseFair h){
         this.h = h;
     }
 

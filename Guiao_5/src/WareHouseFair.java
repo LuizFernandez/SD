@@ -4,10 +4,10 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class WarehouseCoop {
-
-    private Map<String, Product> map =  new HashMap<String, Product>();
+public class WareHouseFair {
+    private Map<String,Product> map =  new HashMap<String, Product>();
     private Lock l = new ReentrantLock();
+    private int timeawait = 100;
 
     private class Product {
         Condition isEmpty = l.newCondition();
@@ -31,15 +31,24 @@ public class WarehouseCoop {
         l.unlock();
     }
 
+    /* Se o um dado Cliente ficar à espera demasiado tempo, os restantes vão ficar à espera até este conseguir obter os seus Produtos todos
+       Evitando se assim a situação de starvation
+     */
     public void consume(String[] items) throws InterruptedException{
         l.lock();
+        int loops = 0;
         for(int i = 0; i < items.length; i++){
             Product p = get(items[i]);
 
-            while(p.quantity == 0){
-                p.isEmpty.await();
+            if(this.timeawait == loops)
                 i = 0;
-            }
+            else
+                while(p.quantity == 0 && loops < this.timeawait){
+                    loops++;
+                    p.isEmpty.await();
+                    i = 0;
+                }
+
         }
         for (String s : items){
             Product p = get(s);

@@ -6,9 +6,10 @@ import java.util.stream.Collectors;
 public class RunCliente implements Runnable{
 
     //private Warehouse h;
-    private WarehouseCoop h;
+    //private WarehouseCoop h;
+    private WareHouseFair h;
 
-    public RunCliente(WarehouseCoop h){
+    public RunCliente(WareHouseFair h){
         this.h = h;
     }
 
