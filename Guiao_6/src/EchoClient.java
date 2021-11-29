@@ -26,7 +26,6 @@ public class EchoClient {
 
                 out.println(userInput);
                 out.flush();
-
                 String response = in.readLine();
                 System.out.println("Server response: " + response);
 

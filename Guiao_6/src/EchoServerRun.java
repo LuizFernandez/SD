@@ -7,12 +7,12 @@ import java.net.Socket;
 public class EchoServerRun implements Runnable{
 
     private Socket s;
-    private SomaNumb soma;
+    //private SomaNumb soma;
     private Aritmetica a;
 
-    public EchoServerRun(Socket s, SomaNumb soma, Aritmetica a){
+    public EchoServerRun(Socket s, /*SomaNumb soma,*/ Aritmetica a){
         this.s = s;
-        this.soma  = soma;
+        //this.soma  = soma;
         this.a = a;
     }
 
@@ -24,9 +24,11 @@ public class EchoServerRun implements Runnable{
             PrintWriter out = new PrintWriter(s.getOutputStream());
 
             String line;
+            int soma = 0;
             while ((line = in.readLine()) != null) {
                 int num = Integer.parseInt(line);
-                int soma = this.soma.add(num);
+                soma += num;
+                this.soma.add(num);
                 out.println(soma);
                 out.flush();
 
@@ -46,7 +48,7 @@ public class EchoServerRun implements Runnable{
     }
     */
 
-    public void run() {
+    public void run() {//ESTA INCOMPLETO => EM VEZ DE IMPRIMIR NO CLIENTE O VALOR TOTAL GLOBAL, IMPRIMIR O VALOR TOTAL DO CLIENTE
         try {
 
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));

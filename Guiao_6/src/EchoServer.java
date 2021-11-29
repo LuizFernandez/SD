@@ -13,7 +13,7 @@ public class EchoServer {
 
             while (true) {
                 Socket socket = ss.accept();
-                Thread t = new Thread(new EchoServerRun(socket, soma, a));
+                Thread t = new Thread(new EchoServerRun(socket, a));
                 t.start();
             }
     }

@@ -5,7 +5,7 @@ public class SomaNumb {//Exercicio 4
 
     private int acc;
     private int numbs;
-    private Lock l = new ReentrantLock();
+    private final Lock l = new ReentrantLock();
 
     public SomaNumb(){
         this.acc = 0;
@@ -25,9 +25,12 @@ public class SomaNumb {//Exercicio 4
 
     public int media(){
         l.lock();
-        int media = this.numbs / this.acc;
         try{
-            return media;
+            if(this.acc < 1)
+                return 0;
+            else {
+                return this.numbs / this.acc;
+            }
         } finally {
             l.unlock();
         }
