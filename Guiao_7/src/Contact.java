@@ -4,11 +4,12 @@ import java.io.IOException;
 import java.util.*;
 
 class Contact {
-    private String name;
-    private int age;
-    private long phoneNumber;
-    private String company;     // Pode ser null
-    private ArrayList<String> emails;
+    //Uso de Final nas variáveis de Instência para garantir que uma instância Contact é imutavle
+    private final String name;
+    private final int age;
+    private final long phoneNumber;
+    private final String company;     // Pode ser null
+    private final ArrayList<String> emails;
 
     public Contact (String name, int age, long phoneNumber, String company, List<String> emails) {
         this.name = name;
@@ -40,7 +41,6 @@ class Contact {
             out.writeUTF(s);
 
         out.flush();
-        out.close();
     }
 
     // @TODO
@@ -62,19 +62,17 @@ class Contact {
             n_emails--;
         }
 
-        in.close();
-
         return new Contact(name,age,phoneNumber,company, emails);
     }
 
     public String toString () {
         StringBuilder builder = new StringBuilder();
-        builder.append(this.name).append(";");
-        builder.append(this.age).append(";");
-        builder.append(this.phoneNumber).append(";");
-        builder.append(this.company).append(";");
+        builder.append(this.name).append(";\n");
+        builder.append(this.age).append(";\n");
+        builder.append(this.phoneNumber).append(";\n");
+        builder.append(this.company).append(";\n");
         builder.append(this.emails.toString());
-        builder.append("}");
+        builder.append("\n");
         return builder.toString();
     }
 

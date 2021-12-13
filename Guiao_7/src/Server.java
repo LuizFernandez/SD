@@ -40,10 +40,10 @@ class ContactManager {
     public ContactList getContacts() {
         try {
             l.lock();
-            ArrayList<Contact> contac = new ArrayList<>();
+            ContactList contac = new ContactList();
             for (Contact c : this.contacts.values())
                 contac.add(c);
-            return (ContactList) contac;
+            return contac;
         } finally {
             l.unlock();
         }
@@ -65,6 +65,10 @@ class ServerWorker implements Runnable {
         try {
             DataInputStream in = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
             DataOutputStream out = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
+
+            ContactList cl = manager.getContacts();
+            cl.serialize(out);
+            out.flush();
 
             while (true) {
 

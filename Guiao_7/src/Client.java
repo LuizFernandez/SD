@@ -23,9 +23,12 @@ public class Client {
         Socket socket = new Socket("localhost", 12345);
 
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-
-        DataInputStream dis = new DataInputStream(new BufferedInputStream((socket.getInputStream())));
+        DataInputStream dis = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
         DataOutputStream dos = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
+
+        ContactList cl = ContactList.deserialize(dis);
+        for(int i = 0; i < cl.size(); i++)
+            System.out.println(cl.get(i).toString());
 
         String userInput;
         while ((userInput = in.readLine()) != null) {
