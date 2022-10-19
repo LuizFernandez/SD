@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="658f1390-02d6-457d-a3b8-64bcb77621bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Guiao_3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_1/guiao-01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_2/guiao-02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_2/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Guiao_2/src/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guião_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guiao-03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Guião_3/Bank$Account.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Guião_3/Bank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Guião_3/BankTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Guião_3/Closer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Guião_3/Creator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Guião_3/Mover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Closer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Closer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/Guiao_4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/guiao-04.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/out/production/Guiao_4/Agreement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/out/production/Guiao_4/Agreement_Teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/out/production/Guiao_4/Barrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/out/production/Guiao_4/Barrier_Teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/out/production/Guiao_4/RunAgreement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/out/production/Guiao_4/RunBarrier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/src/Agreement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/src/Agreement_Teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/src/Barrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/src/Barrier_Teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/src/RunAgreement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_4/src/RunBarrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/Guiao_5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/guiao-05.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/RunCliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/RunSupply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/WareHouseFair$Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/WareHouseFair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/Warehouse$Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/Warehouse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/WarehouseCoop$Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/WarehouseCoop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/out/production/Guiao_5/Warehouse_Teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/src/RunCliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/src/RunSupply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/src/WareHouseFair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/src/Warehouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/src/WarehouseCoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_5/src/Warehouse_Teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/Guiao_6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/guiao-06.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/out/production/Guiao_6/Aritmetica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/out/production/Guiao_6/EchoClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/out/production/Guiao_6/EchoServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/out/production/Guiao_6/EchoServerRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/out/production/Guiao_6/SomaNumb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/Aritmetica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/Aritmetica.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/EchoClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/EchoClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/EchoServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/EchoServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/EchoServerRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/EchoServerRun.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/SomaNumb.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_6/src/SomaNumb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/Guiao_7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/guiao-07.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/ContactList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/ContactList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/ContactManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_7/src/ServerWorker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/Guiao_8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/guiao-08.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/Demultiplexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/FramedConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/SequentialClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/ServerWithWorkers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/SimpleClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/SimpleServerWithWorkers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/TaggedConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/ThreadedClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Guiao_8/src/WrongThreadedClient.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GIr5CpiyqOxYe6BLZtjctuingx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/deadlock/Desktop/SD/Guiao_2"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="658f1390-02d6-457d-a3b8-64bcb77621bb" name="Changes" comment="" />
+      <created>1666086755164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666086755164</updated>
+      <workItem from="1666086757823" duration="367000" />
+      <workItem from="1666087132001" duration="4292000" />
+      <workItem from="1666166702331" duration="3004000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
