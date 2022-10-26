@@ -2,7 +2,7 @@ public class AgreementTest {
 
     public static void main(String[] args) throws InterruptedException{
 
-        int N = 4;
+        int N = 5;
 
         Agreement a = new Agreement(N);
         Thread[] t = new Thread[N];
