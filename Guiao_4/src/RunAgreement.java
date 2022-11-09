@@ -16,7 +16,6 @@ public class RunAgreement implements Runnable{
             while(i < vezes){
                 System.out.println(Thread.currentThread().getName() + " valor maximo proposto por todas as threads " + a.propose(rand.nextInt(100)) + " !");
                 i++;
-                this.a.setValue();
             }
         } catch (InterruptedException e){
             e.printStackTrace();

@@ -23,12 +23,9 @@ public class Barrier {
             this.n_Threads++;
             if (this.n_Threads < this.limite) {
                 while (epoca == this.epoca) {
-                    System.out.println(Thread.currentThread().getName() + " a espera do fim da " + epoca + " epoca!");
                     c.await();
-                    System.out.println(Thread.currentThread().getName() + " fim da epoca!");
                 }
             } else {
-                System.out.println(Thread.currentThread().getName() + " sou o fim da epoca!");
                 this.epoca++;
                 this.n_Threads = 0;
                 c.signalAll();
